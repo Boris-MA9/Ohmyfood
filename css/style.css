@@ -443,6 +443,10 @@ a {
   background-color: #9356DC;
   padding: 1%;
 }
+.functioning__step:hover > .functioning__step--icon {
+  color: #9356DC;
+}
+
 .functioning__step--icon {
   display: flex;
   justify-content: center;
@@ -695,4 +699,99 @@ a {
   content: "\f058";
   color: #ffffff;
   transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+}
+
+@media all and (min-width: 1024px) {
+    .header__goback {
+    font-size: 32px;
+  }
+    .footer__logo {
+    width: 137px;
+    margin: 0;
+  }
+    .functioning__list {
+    width: 98%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+    .functioning__step {
+    width: 30%;
+  }
+    .page__restaurant--img {
+    height: 400px;
+  }
+    .slight {
+    max-width: 1024px;
+    margin: auto;
+  }
+    .slight__heading {
+    width: 400px;
+    height: 41px;
+    justify-content: center;
+  }
+    .slight__heading h2 {
+    display: flex;
+    font-size: 40px;
+    width: 95%;
+  }
+    .slight__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+    .race-list__heading {
+    font-size: 22px;
+  }
+}
+
+@media all and (min-width: 768px) {
+    .restaurant__bloc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+    .restaurant__cards {
+    width: 48%;
+    margin: 0;
+    margin-bottom: 4%;
+  }
+    .slight__heading {
+    width: 400px;
+    height: 41px;
+    justify-content: center;
+  }
+    .slight__heading h2 {
+    display: flex;
+    font-size: 35px;
+    width: 95%;
+  }
+    .race-list {
+    width: 100%;
+  }
+    .footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+    .footer__logo {
+    width: 137px;
+    margin: 0;
+  }
+    .footer__bloc {
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+  }
+    .footer__nav {
+    width: 190px;
+  }
+    .footer__nav--info p {
+    width: 130px;
+    height: 20px;
+  }
+
 }
